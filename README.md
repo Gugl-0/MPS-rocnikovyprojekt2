@@ -53,6 +53,23 @@ Problém byl v tom že jsem v jednom loopu zároveň inkrementoval proměnnou "b
         }
     }
 
+### Třetí problém:
+
+Poslední problém byl s asteroidy:
+
+- Spawnuli se v borderu a ten potom smazali
+
+  To jsem vyřešil tak že jsem zmenšil pole kde se asteroidy můžou spawnovat
+
+- Pokud jsem asteroid sestřelil objevilo se misto něj X, to se stát mělo ale X mělo po chvilce zmizetcoč se nestalo a X tam zůstalo
+  Tohle jsem vyřešil tím, že 100ms jsem místo "X" vypsal prázdno " "
+
+Pak už jsem žádný problém nenašel tak jsem se pustil do upravování kódu
+
+## Co jsem změnil
+
+
+
 
 
 
