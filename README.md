@@ -104,6 +104,10 @@ Taky jsem zvýšil cílove score z 100 na 150
 
 # Videa
 
+## Victory [https://youtu.be/gVUBlgA_rMo]
+
+## Defeat [https://youtu.be/17HjFSwBa0Y]
+
 
 
 
