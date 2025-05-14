@@ -11,7 +11,7 @@ Hru jsem opět dělal podle tutoriálu:
 
 https://kickingbrains.wordpress.com/2016/08/03/space-shooter-a-simple-c-game-for-windows/
 
-###První problém
+### První problém
 
 Když jsem hru chtěl spustit tak se nic nestalo. V kódu byl totiž špatně použitý getch() a kbhit().
 
