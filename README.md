@@ -98,7 +98,13 @@ Tak jsem změníl to že pokud sestřelím asteroid tak se mi do score přičte 
 
 Taky jsem zvýšil cílove score z 100 na 150
 
-Jako energie se zobrazoval znak "Ů" to jsem změníl na znak 176 v ascii kódu "░"
+3-Jako energie se zobrazoval znak "Ů" to jsem změníl na znak 176 v ascii kódu "░"
+
+- Chtěl jsem ještě přidat limit nábojů kdy když mi dojdou náboje tak bude game over jenže to se mi asi po hodině zkoušení (i s botem) nedařilo tak jsem to vzdal
+
+# Videa
+
+
 
 
 
