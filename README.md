@@ -87,8 +87,18 @@ Na kódu jsem upravil pár věcí které se mi nelíbily
 **To jsem udelal takhle:**
 
 Asteroidy se posouvaly a spawnovali každý snímek.
+
 Přidal jsem do main loopu proměnou "frameCount" která počítá počet snímku, pak jsem přidal so loopu který vykresloval asteroidy to že má vykreslit další asteroidy když je počet snímků dělitelný 4 se zbytkem 0 (frameCount % 4 = 0)
+
 Takhle se budou posouvat a spawnovat asteroidy každý 4. snímek, může se to ale jednoduše změnit a to tak že v "frameCount % 4 = 0" vyměním 4 za jiné číslo a to podle toho po kolika snímcích chci posunout a sapwnout asteroidy
+
+2-Konce hry se dosáhlo moc rychle
+
+Tak jsem změníl to že pokud sestřelím asteroid tak se mi do score přičte 5 míto 10
+
+Taky jsem zvýšil cílove score z 100 na 150
+
+Jako energie se zobrazoval znak "Ů" to jsem změníl na znak 176 v ascii kódu "░"
 
 
 
