@@ -64,9 +64,36 @@ Poslední problém byl s asteroidy:
 - Pokud jsem asteroid sestřelil objevilo se misto něj X, to se stát mělo ale X mělo po chvilce zmizetcoč se nestalo a X tam zůstalo
   Tohle jsem vyřešil tím, že 100ms jsem místo "X" vypsal prázdno " "
 
-Pak už jsem žádný problém nenašel tak jsem se pustil do upravování kódu
+Pak už jsem žádný problém nenašel
 
-## Co jsem změnil
+## Hra
+
+Cílem hry je dosáhnout 100 score aniž by mi asteroidy zničili stíhačku
+
+Score ze získavá sestřelováním asteroidů. Každý zničený asteroid = +10 score
+
+Po hracím poli se hýbe pomocí šipek a stříli se pomocí mezerníku
+
+Stíhačka má 3 životy a na každý život má 5 energie. Pokud příjdu o pět energie (trefí mě 5 asteroidů) příjdu o jeden život
+
+## Co jsem upravil
+
+Na kódu jsem upravil pár věcí které se mi nelíbily
+
+### Pomalejší asteroidy
+
+1-Na můj vkus padaly asteroidy až moc rychle tak jsem je zpomalil
+
+**To jsem udelal takhle:**
+
+Asteroidy se posouvaly a spawnovali každý snímek.
+Přidal jsem do main loopu proměnou "frameCount" která počítá počet snímku, pak jsem přidal so loopu který vykresloval asteroidy to že má vykreslit další asteroidy když je počet snímků dělitelný 4 se zbytkem 0 (frameCount % 4 = 0)
+Takhle se budou posouvat a spawnovat asteroidy každý 4. snímek, může se to ale jednoduše změnit a to tak že v "frameCount % 4 = 0" vyměním 4 za jiné číslo a to podle toho po kolika snímcích chci posunout a sapwnout asteroidy
+
+
+
+
+
 
 
 
