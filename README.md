@@ -34,11 +34,17 @@ Problém byl v tom že jsem v jednom loopu zároveň inkrementoval proměnnou "b
 **Bot mi poradil že mám:**
 
 for (bullet = Bullets.begin(); bullet != Bullets.end(); bullet++) {
+
     (*bullet)->Move();
+    
     if ((*bullet)->isOut()) {
+    
         delete(*bullet); 
+        
         bullet = Bullets.erase(bullet);
+        
     }
+    
 }
 
 **Za:**
