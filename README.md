@@ -11,3 +11,10 @@ Hru jsem opět dělal podle tutoriálu:
 
 https://kickingbrains.wordpress.com/2016/08/03/space-shooter-a-simple-c-game-for-windows/
 
+###První problém
+
+Když jsem hru chtěl spustit tak se nic nestalo. V kódu byl totiž špatně použitý getch() a kbhit().
+
+Funkce getch() slouží k získání znaku z klávesnice bez čekání na enter (jako třeba u scanf_s) ale také ji nevypíšr na obrazovku
+
+Funkce
