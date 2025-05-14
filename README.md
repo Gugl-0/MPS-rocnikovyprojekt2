@@ -33,31 +33,25 @@ Problém byl v tom že jsem v jednom loopu zároveň inkrementoval proměnnou "b
 
 **Bot mi poradil že mám:**
 
-for (bullet = Bullets.begin(); bullet != Bullets.end(); bullet++) {
-
-    (*bullet)->Move();
-    
-    if ((*bullet)->isOut()) {
-    
-        delete(*bullet); 
-        
-        bullet = Bullets.erase(bullet);
-        
+    for (bullet = Bullets.begin(); bullet != Bullets.end(); bullet++) {
+        (*bullet)->Move();
+        if ((*bullet)->isOut()) {
+            delete(*bullet); 
+            bullet = Bullets.erase(bullet);
+        }
     }
-    
-}
 
-**Za:**
+**Vyměnit za:**
 
-for (bullet = Bullets.begin(); bullet != Bullets.end(); ) {
-    (*bullet)->Move();
-    if ((*bullet)->isOut()) {
-        delete(*bullet); 
-        bullet = Bullets.erase(bullet); // erase vrací nový platný iterator
-    } else {
-        ++bullet;
+    for (bullet = Bullets.begin(); bullet != Bullets.end(); ) {
+        (*bullet)->Move();
+        if ((*bullet)->isOut()) {
+            delete(*bullet); 
+            bullet = Bullets.erase(bullet); // erase vrací nový platný iterator
+        } else {
+            ++bullet;
+        }
     }
-}
 
 
 
